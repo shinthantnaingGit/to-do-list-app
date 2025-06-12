@@ -1,5 +1,6 @@
 //ACTIONS (BUSINESS LOGICS)
 //CREATE LIST
+export const tasks = ["Learn JS","Learn React","Learn Next","Learn PHP","Learn Laravel"]
 export const createList = (task) => {
   const listTP = listTemplate.content.cloneNode(true);
 //   console.log(listTP);
