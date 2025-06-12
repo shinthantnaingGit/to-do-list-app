@@ -30,8 +30,8 @@ export const deleteList = (listId) => {
     currentList.classList.add("animate__animated", "animate__zoomOut");
     currentList.addEventListener("animationend", () => {
       currentList.remove();
-      updateTaskTotal();
-      updateDoneTotal();
+      // updateTaskTotal();
+      // updateDoneTotal();
       const allLists = listGroup.querySelectorAll(`.list `);
       if (allLists.length === 0) {
       deleteAll.classList.add("opacity-50");      
@@ -97,7 +97,7 @@ export const checkList = (listId) => {
     currentList.classList.remove("opacity-50");
     task.classList.remove("line-through");
   }
-  updateDoneTotal();
+  // updateDoneTotal();
 };
 //UPDATE TASK TOTAL
 export const updateTaskTotal = () => {

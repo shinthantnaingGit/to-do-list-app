@@ -9,7 +9,7 @@ export const addList = (text) => {
   //   const task = taskInput.value;
   listGroup.append(createList(text));
   taskInput.value = null;
-  updateTaskTotal();
+  // updateTaskTotal();
 };
 
 //LIST GROUP HANDLER
@@ -62,8 +62,8 @@ export const deleteAllHandler = () => {
       list.classList.add("animate__animated", "animate__fadeOut");
       list.addEventListener("animationend", () => {
       list.remove();
-      updateTaskTotal();
-      updateDoneTotal();
+      // updateTaskTotal();
+      // updateDoneTotal();
       });
     });
     
