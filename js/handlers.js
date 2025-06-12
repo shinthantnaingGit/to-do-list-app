@@ -11,11 +11,6 @@ export const addList = (text) => {
   taskInput.value = null;
   updateTaskTotal();
 };
-addList("Shin");
-addList("Shin");
-addList("Shin");
-addList("Shin");
-addList("Shin");
 
 //LIST GROUP HANDLER
 export const listGroupHandler = (event) => {
